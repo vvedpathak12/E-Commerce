@@ -1,0 +1,11 @@
+.password-eye {
+  position: absolute;
+  bottom: 14%;
+  right: 4%;
+  font-size: large;
+  cursor: pointer;
+}
+
+.logOutBtn{
+  padding: 4px 10px 4px 10px;
+}
