@@ -20,31 +20,31 @@ export class ProductService {
   }
 
   getAllProductsByCategoryId(id: number): Observable<any[]> {
-    return this.http.get<any[]>('http://freeapi.miniprojectideas.com/api/amazon/GetAllProductsByCategoryId?id=' + id);
+    return this.http.get<any[]>('https://freeapi.miniprojectideas.com/api/amazon/GetAllProductsByCategoryId?id=' + id);
   }
 
   register(obj: any): Observable<any> {
-    return this.http.post<any>('http://freeapi.miniprojectideas.com/api/amazon/RegisterCustomer', obj);
+    return this.http.post<any>('https://freeapi.miniprojectideas.com/api/amazon/RegisterCustomer', obj);
   }
 
   login(obj: any): Observable<any> {
-    return this.http.post<any>('http://freeapi.miniprojectideas.com/api/amazon/Login', obj);
+    return this.http.post<any>('https://freeapi.miniprojectideas.com/api/amazon/Login', obj);
   }
 
   addToCart(obj: any): Observable<any> {
-    return this.http.post<any>('http://freeapi.miniprojectideas.com/api/amazon/AddToCart', obj);
+    return this.http.post<any>('https://freeapi.miniprojectideas.com/api/amazon/AddToCart', obj);
   }
 
   getAddToCartDataByCustomerId(id: number): Observable<any[]> {
-    return this.http.get<any[]>('http://freeapi.miniprojectideas.com/api/amazon/GetCartProductsByCustomerId?id=' + id);
+    return this.http.get<any[]>('https://freeapi.miniprojectideas.com/api/amazon/GetCartProductsByCustomerId?id=' + id);
   }
 
   deleteProductFromCartById(cartId: number): Observable<any[]> {
-    return this.http.get<any[]>('http://freeapi.miniprojectideas.com/api/amazon/DeleteProductFromCartById?id=' + cartId);
+    return this.http.get<any[]>('https://freeapi.miniprojectideas.com/api/amazon/DeleteProductFromCartById?id=' + cartId);
   }
 
   placeOrder(obj: any): Observable<any> {
-    return this.http.post<any>('http://freeapi.miniprojectideas.com/api/amazon/PlaceOrder', obj);
+    return this.http.post<any>('https://freeapi.miniprojectideas.com/api/amazon/PlaceOrder', obj);
   }
 
 }
