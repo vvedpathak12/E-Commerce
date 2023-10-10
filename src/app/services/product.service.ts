@@ -12,11 +12,11 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getAllProduct(): Observable<any[]> {
-    return this.http.get<any[]>('http://freeapi.miniprojectideas.com/api/amazon/GetAllProducts');
+    return this.http.get<any[]>('https://freeapi.miniprojectideas.com/api/amazon/GetAllProducts');
   }
 
   getAllCategory(): Observable<any[]> {
-    return this.http.get<any[]>('http://freeapi.miniprojectideas.com/api/amazon/GetAllCategory');
+    return this.http.get<any[]>('https://freeapi.miniprojectideas.com/api/amazon/GetAllCategory');
   }
 
   getAllProductsByCategoryId(id: number): Observable<any[]> {
